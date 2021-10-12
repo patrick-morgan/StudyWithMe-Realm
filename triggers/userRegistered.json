@@ -1,0 +1,19 @@
+{
+    "id": "6165001b4697b7687cf63989",
+    "name": "userRegistered",
+    "type": "AUTHENTICATION",
+    "config": {
+        "operation_type": "CREATE",
+        "providers": [
+            "local-userpass"
+        ]
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "createNewUserDocument"
+            }
+        }
+    }
+}
