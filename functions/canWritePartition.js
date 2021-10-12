@@ -36,6 +36,9 @@ exports = function(partition){
     case "user":
       console.log(`Checking if partitionValue(${partitionValue}) matches user.id(${user.id}) – ${partitionValue === user.id}`);
       return partitionValue === user.id;
+    case "location":
+      console.log("No user can write to the Location collection, returning false");
+      return false;
     case "all-users":
       console.log(`No user can write to an all-users (PublicUser) partitions`);
       return false;
