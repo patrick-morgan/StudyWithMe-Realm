@@ -22,7 +22,7 @@
                 "required": [
                     "id",
                     "locationId",
-                    "date"
+                    "time"
                 ],
                 "title": "CheckIn"
             }
@@ -71,7 +71,9 @@
                     "bsonType": "string"
                 }
             },
-            "required": [],
+            "required": [
+                "userName"
+            ],
             "title": "UserPreferences"
         }
     },
@@ -79,7 +81,7 @@
         "_id",
         "partition",
         "firstName",
-        "lastname",
+        "lastName",
         "email"
     ],
     "title": "User"

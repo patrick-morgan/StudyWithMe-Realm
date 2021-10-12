@@ -35,20 +35,17 @@ exports = function({user}) {
   const defaultLocation = context.values.get("defaultLocation");
   const userPreferences = {
     userName: "",
-    profileImageName: "default.png"
+    profilePhoto: null
   }
   const userDoc = {
     _id: user.id,
     partition: partition,
-    firstName: user.data.firstName,
-    lastName: user.data.lastName,
+    firstName: "",
+    lastName: "",
     email: user.data.email,
     userPreferences: userPreferences,
-    location: defaultLocation,
     lastSeenAt: null,
-    recentLocationId: null,
-    recentLocationTime: null,
-    friends: []
+    checkIns: []
   };
   return userCollection.insertOne(userDoc)
   .then(result => {

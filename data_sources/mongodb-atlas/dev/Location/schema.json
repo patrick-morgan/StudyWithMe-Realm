@@ -39,7 +39,14 @@
                 }
             },
             "required": [
-                "_id"
+                "_id",
+                "sunday",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday"
             ],
             "title": "LocationHours"
         },
