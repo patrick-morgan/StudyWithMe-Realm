@@ -36,6 +36,9 @@ exports = function(partition){
     case "user":
       console.log(`Checking if partitionValue(${partitionValue}) matches user.id(${user.id}) – ${partitionValue === user.id}`);
       return partitionValue === user.id;
+    case "location":
+      console.log("Any user can read the locations data");
+      return true;
     case "all-users":
       console.log("Any user can read all-users (PublicUser) partitions");
       return true;
