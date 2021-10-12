@@ -1,9 +1,5 @@
 [
     {
-        "name": "passwordReset",
-        "private": true
-    },
-    {
         "name": "canReadPartition",
         "private": true,
         "run_as_system": true
@@ -16,5 +12,14 @@
     {
         "name": "createNewUserDocument",
         "private": true
+    },
+    {
+        "name": "passwordReset",
+        "private": true
+    },
+    {
+        "name": "userDocWrittenTo",
+        "private": true,
+        "run_as_system": true
     }
 ]

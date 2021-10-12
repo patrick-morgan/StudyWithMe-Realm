@@ -16,7 +16,7 @@ exports = function(partition){
   */
   console.log(`Checking if can sync a read for partition = ${partition}`);
   
-  const db = context.services.get("mongodb-atlas").db("development");
+  const db = context.services.get("mongodb-atlas").db("dev");
   const userCollection = db.collection("User");
   const user = context.user;
   let partitionKey = "";

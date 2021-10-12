@@ -1,0 +1,29 @@
+{
+    "id": "61651181d6947c8474e84991",
+    "name": "userCollectionWrite",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "INSERT",
+            "UPDATE",
+            "DELETE",
+            "REPLACE"
+        ],
+        "database": "dev",
+        "collection": "User",
+        "service_name": "mongodb-atlas",
+        "match": {},
+        "project": {},
+        "full_document": true,
+        "full_document_before_change": false,
+        "unordered": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "userDocWrittenTo"
+            }
+        }
+    }
+}

@@ -29,7 +29,7 @@ exports = function({user}) {
 
     Learn more about http client here: https://docs.mongodb.com/realm/functions/context/#context-http
   */
-  const db = context.services.get("mongodb-atlas").db("RChat");
+  const db = context.services.get("mongodb-atlas").db("dev");
   const userCollection = db.collection("User");
   const partition = 'user=${user.id}';
   const defaultLocation = context.values.get("defaultLocation");
