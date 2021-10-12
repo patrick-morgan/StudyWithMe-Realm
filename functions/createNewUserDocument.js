@@ -31,7 +31,7 @@ exports = function({user}) {
   */
   const db = context.services.get("mongodb-atlas").db("dev");
   const userCollection = db.collection("User");
-  const partition = 'user=${user.id}';
+  const partition = `user=${user.id}`;
   const defaultLocation = context.values.get("defaultLocation");
   const userPreferences = {
     userName: "",
