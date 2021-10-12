@@ -1,0 +1,76 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "checkIns": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "id": {
+                        "bsonType": "string"
+                    },
+                    "locationId": {
+                        "bsonType": "string"
+                    },
+                    "time": {
+                        "bsonType": "date"
+                    }
+                },
+                "required": [
+                    "id",
+                    "locationId",
+                    "date"
+                ],
+                "title": "CheckIn"
+            }
+        },
+        "firstName": {
+            "bsonType": "string"
+        },
+        "lastName": {
+            "bsonType": "string"
+        },
+        "lastSeenAt": {
+            "bsonType": "date"
+        },
+        "partition": {
+            "bsonType": "string"
+        },
+        "profilePhoto": {
+            "bsonType": "object",
+            "properties": {
+                "_id": {
+                    "bsonType": "string"
+                },
+                "date": {
+                    "bsonType": "date"
+                },
+                "picture": {
+                    "bsonType": "binData"
+                },
+                "thumbNail": {
+                    "bsonType": "binData"
+                }
+            },
+            "required": [
+                "_id",
+                "date"
+            ],
+            "title": "Photo"
+        },
+        "userName": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "partition",
+        "firstName",
+        "lastname",
+        "userName"
+    ],
+    "title": "PublicUser"
+}
