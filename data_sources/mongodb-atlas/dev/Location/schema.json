@@ -10,68 +10,6 @@
         "city": {
             "bsonType": "string"
         },
-        "locationHours": {
-            "bsonType": "object",
-            "properties": {
-                "_id": {
-                    "bsonType": "string"
-                },
-                "friday": {
-                    "bsonType": "string"
-                },
-                "monday": {
-                    "bsonType": "string"
-                },
-                "saturday": {
-                    "bsonType": "string"
-                },
-                "sunday": {
-                    "bsonType": "string"
-                },
-                "thursday": {
-                    "bsonType": "string"
-                },
-                "tuesday": {
-                    "bsonType": "string"
-                },
-                "wednesday": {
-                    "bsonType": "string"
-                }
-            },
-            "required": [
-                "_id",
-                "sunday",
-                "monday",
-                "tuesday",
-                "wednesday",
-                "thursday",
-                "friday",
-                "saturday"
-            ],
-            "title": "LocationHours"
-        },
-        "locationPhoto": {
-            "bsonType": "object",
-            "properties": {
-                "_id": {
-                    "bsonType": "string"
-                },
-                "date": {
-                    "bsonType": "date"
-                },
-                "picture": {
-                    "bsonType": "binData"
-                },
-                "thumbNail": {
-                    "bsonType": "binData"
-                }
-            },
-            "required": [
-                "_id",
-                "date"
-            ],
-            "title": "Photo"
-        },
         "name": {
             "bsonType": "string"
         },
