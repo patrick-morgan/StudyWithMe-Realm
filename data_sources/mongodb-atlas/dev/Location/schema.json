@@ -10,6 +10,12 @@
         "city": {
             "bsonType": "string"
         },
+        "fish": {
+            "bsonType": "string"
+        },
+        "imageName": {
+            "bsonType": "string"
+        },
         "name": {
             "bsonType": "string"
         },
@@ -26,7 +32,9 @@
         "name",
         "address",
         "city",
-        "state"
+        "state",
+        "imageName",
+        "fish"
     ],
     "title": "Location"
 }
