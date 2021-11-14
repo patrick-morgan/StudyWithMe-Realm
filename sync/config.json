@@ -6,26 +6,8 @@
         "type": "string",
         "required": true,
         "permissions": {
-            "read": {
-                "%%true": {
-                    "%function": {
-                        "arguments": [
-                            "%%partition"
-                        ],
-                        "name": "canReadPartition"
-                    }
-                }
-            },
-            "write": {
-                "%%true": {
-                    "%function": {
-                        "arguments": [
-                            "%%partition"
-                        ],
-                        "name": "canWritePartition"
-                    }
-                }
-            }
+            "read": true,
+            "write": true
         }
     },
     "development_mode_enabled": true,

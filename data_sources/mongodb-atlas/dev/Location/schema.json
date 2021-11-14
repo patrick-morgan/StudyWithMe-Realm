@@ -10,11 +10,51 @@
         "city": {
             "bsonType": "string"
         },
-        "fish": {
+        "fishman": {
             "bsonType": "string"
         },
         "imageName": {
             "bsonType": "string"
+        },
+        "locationHours": {
+            "bsonType": "object",
+            "properties": {
+                "_id": {
+                    "bsonType": "string"
+                },
+                "friday": {
+                    "bsonType": "string"
+                },
+                "monday": {
+                    "bsonType": "string"
+                },
+                "saturday": {
+                    "bsonType": "string"
+                },
+                "sunday": {
+                    "bsonType": "string"
+                },
+                "thursday": {
+                    "bsonType": "string"
+                },
+                "tuesday": {
+                    "bsonType": "string"
+                },
+                "wednesday": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [
+                "_id",
+                "sunday",
+                "monday",
+                "tuesday",
+                "wednesday",
+                "thursday",
+                "friday",
+                "saturday"
+            ],
+            "title": "LocationHours"
         },
         "name": {
             "bsonType": "string"
@@ -34,7 +74,7 @@
         "city",
         "state",
         "imageName",
-        "fish"
+        "fishman"
     ],
     "title": "Location"
 }
