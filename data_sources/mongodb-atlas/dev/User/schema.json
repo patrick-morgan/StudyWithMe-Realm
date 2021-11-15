@@ -33,6 +33,29 @@
         "firstName": {
             "bsonType": "string"
         },
+        "friends": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "friendId": {
+                        "bsonType": "string"
+                    },
+                    "id": {
+                        "bsonType": "string"
+                    },
+                    "relationshipType": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "friendId",
+                    "relationshipType"
+                ],
+                "title": "Friend"
+            }
+        },
         "lastName": {
             "bsonType": "string"
         },

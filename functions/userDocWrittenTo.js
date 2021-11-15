@@ -34,7 +34,8 @@ exports = function(changeEvent){
         firstName: user.firstName,
         lastName: user.lastName,
         lastSeenAt: user.lastSeenAt,
-        checkIns: user.checkIns
+        checkIns: user.checkIns,
+        friends: user.friends
       };
       if (user.userPreferences) {
         const prefs = user.userPreferences;

@@ -45,7 +45,8 @@ exports = function({user}) {
     email: user.data.email,
     userPreferences: userPreferences,
     lastSeenAt: null,
-    checkIns: []
+    checkIns: [],
+    friends: []
   };
   return userCollection.insertOne(userDoc)
   .then(result => {
