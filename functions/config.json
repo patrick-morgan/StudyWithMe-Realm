@@ -26,5 +26,10 @@
         "name": "updateOtherUserFriendship",
         "private": false,
         "run_as_system": true
+    },
+    {
+        "name": "addFriend",
+        "private": false,
+        "run_as_system": true
     }
 ]
